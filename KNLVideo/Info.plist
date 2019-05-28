@@ -41,5 +41,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>KNLVideo wants to save to your Photo Library</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>KNLVideo wants to access your Photo Library</string>
+	<key>NSCameraUsageDescription</key>
+	<string>KNLVideo wants to use your camera</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>KNLVideo wants to use your microphone</string>
 </dict>
 </plist>

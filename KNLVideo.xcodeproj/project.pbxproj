@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEAC8090229DE40800DEDE03 /* MergeViewControllerKNL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC808F229DE40800DEDE03 /* MergeViewControllerKNL.swift */; };
+		CEAC8092229DE42700DEDE03 /* PlayViewControllerKNL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC8091229DE42700DEDE03 /* PlayViewControllerKNL.swift */; };
+		CEAC8094229DE43700DEDE03 /* RecordViewControllerKNL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC8093229DE43700DEDE03 /* RecordViewControllerKNL.swift */; };
+		CEAC8096229DE72F00DEDE03 /* VideoKNL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC8095229DE72F00DEDE03 /* VideoKNL.swift */; };
 		CEBCC7B5229DDF4600A494D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBCC7B4229DDF4600A494D8 /* AppDelegate.swift */; };
-		CEBCC7B7229DDF4600A494D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBCC7B6229DDF4600A494D8 /* ViewController.swift */; };
 		CEBCC7BA229DDF4600A494D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBCC7B8229DDF4600A494D8 /* Main.storyboard */; };
 		CEBCC7BC229DDF4800A494D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBCC7BB229DDF4800A494D8 /* Assets.xcassets */; };
 		CEBCC7BF229DDF4800A494D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBCC7BD229DDF4800A494D8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CEAC808F229DE40800DEDE03 /* MergeViewControllerKNL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeViewControllerKNL.swift; sourceTree = "<group>"; };
+		CEAC8091229DE42700DEDE03 /* PlayViewControllerKNL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewControllerKNL.swift; sourceTree = "<group>"; };
+		CEAC8093229DE43700DEDE03 /* RecordViewControllerKNL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewControllerKNL.swift; sourceTree = "<group>"; };
+		CEAC8095229DE72F00DEDE03 /* VideoKNL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoKNL.swift; sourceTree = "<group>"; };
 		CEBCC7B1229DDF4600A494D8 /* KNLVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KNLVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBCC7B4229DDF4600A494D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEBCC7B6229DDF4600A494D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEBCC7B9229DDF4600A494D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEBCC7BB229DDF4800A494D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEBCC7BE229DDF4800A494D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				CEBCC7B4229DDF4600A494D8 /* AppDelegate.swift */,
-				CEBCC7B6229DDF4600A494D8 /* ViewController.swift */,
+				CEAC808F229DE40800DEDE03 /* MergeViewControllerKNL.swift */,
+				CEAC8091229DE42700DEDE03 /* PlayViewControllerKNL.swift */,
+				CEAC8093229DE43700DEDE03 /* RecordViewControllerKNL.swift */,
+				CEAC8095229DE72F00DEDE03 /* VideoKNL.swift */,
 				CEBCC7B8229DDF4600A494D8 /* Main.storyboard */,
 				CEBCC7BB229DDF4800A494D8 /* Assets.xcassets */,
 				CEBCC7BD229DDF4800A494D8 /* LaunchScreen.storyboard */,
@@ -135,8 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBCC7B7229DDF4600A494D8 /* ViewController.swift in Sources */,
+				CEAC8092229DE42700DEDE03 /* PlayViewControllerKNL.swift in Sources */,
 				CEBCC7B5229DDF4600A494D8 /* AppDelegate.swift in Sources */,
+				CEAC8096229DE72F00DEDE03 /* VideoKNL.swift in Sources */,
+				CEAC8090229DE40800DEDE03 /* MergeViewControllerKNL.swift in Sources */,
+				CEAC8094229DE43700DEDE03 /* RecordViewControllerKNL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

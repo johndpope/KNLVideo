@@ -1,24 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X6H-Xs-16y">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Play-->
+        <scene sceneID="vIR-gA-cSv">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="RPN-1K-5jg" customClass="PlayViewControllerKNL" customModule="KNLVideo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yb1-Nx-NkO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qg-Vi-Hka">
+                                <rect key="frame" x="172" y="433" width="70" height="30"/>
+                                <state key="normal" title="Play video"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0Qg-Vi-Hka" firstAttribute="centerX" secondItem="Yb1-Nx-NkO" secondAttribute="centerX" id="29S-yC-Tgv"/>
+                            <constraint firstItem="0Qg-Vi-Hka" firstAttribute="centerY" secondItem="Yb1-Nx-NkO" secondAttribute="centerY" id="Zef-Oo-6dp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4qX-Oj-cMb"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Play" id="dOv-kL-1x7"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iOZ-os-AsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="833" y="-319"/>
+        </scene>
+        <!--Merge-->
+        <scene sceneID="dnz-UQ-alK">
+            <objects>
+                <viewController id="rkV-oL-lOI" customClass="MergeViewControllerKNL" customModule="KNLVideo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IFZ-ez-vgu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="sgf-k2-H4J">
+                                <rect key="frame" x="145.5" y="364" width="123" height="168"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9C-M5-n2d">
+                                        <rect key="frame" x="0.0" y="0.0" width="123" height="30"/>
+                                        <state key="normal" title="Add first video"/>
+                                        <connections>
+                                            <action selector="loadFirstVideo:" destination="rkV-oL-lOI" eventType="touchUpInside" id="OnQ-fG-1FD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vJ-d3-Qyi">
+                                        <rect key="frame" x="0.0" y="46" width="123" height="30"/>
+                                        <state key="normal" title="Add second video"/>
+                                        <connections>
+                                            <action selector="loadSecondVideo:" destination="rkV-oL-lOI" eventType="touchUpInside" id="dyD-Ci-ffE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kmm-QF-LXI">
+                                        <rect key="frame" x="0.0" y="92" width="123" height="30"/>
+                                        <state key="normal" title="Animation text"/>
+                                        <connections>
+                                            <action selector="loadAnimation:" destination="rkV-oL-lOI" eventType="touchUpInside" id="3YO-kF-voH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ot-iD-rrO">
+                                        <rect key="frame" x="0.0" y="138" width="123" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                        <state key="normal" title="Merge"/>
+                                        <connections>
+                                            <action selector="merge:" destination="rkV-oL-lOI" eventType="touchUpInside" id="UEP-m1-LlP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sgf-k2-H4J" firstAttribute="centerX" secondItem="IFZ-ez-vgu" secondAttribute="centerX" id="3nc-jm-6xE"/>
+                            <constraint firstItem="sgf-k2-H4J" firstAttribute="centerY" secondItem="IFZ-ez-vgu" secondAttribute="centerY" id="eph-4x-yIg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HHD-IQ-C8a"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Merge" id="l9m-36-acI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VaD-YV-Zg7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71" y="-643"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="1HQ-Wk-xCE">
+            <objects>
+                <tabBarController id="X6H-Xs-16y" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Abn-Ig-7fe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rkV-oL-lOI" kind="relationship" relationship="viewControllers" id="jvU-tC-jbU"/>
+                        <segue destination="RPN-1K-5jg" kind="relationship" relationship="viewControllers" id="N9o-NI-IKH"/>
+                        <segue destination="dfY-la-H91" kind="relationship" relationship="viewControllers" id="E3W-5M-9jR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7U0-3O-BSQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-989" y="-319"/>
+        </scene>
+        <!--Record-->
+        <scene sceneID="fLe-0q-Brv">
+            <objects>
+                <viewController id="dfY-la-H91" customClass="RecordViewControllerKNL" customModule="KNLVideo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0IJ-XG-kvE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76v-NB-qBZ">
+                                <rect key="frame" x="162" y="433" width="90" height="30"/>
+                                <state key="normal" title="Record video"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="76v-NB-qBZ" firstAttribute="centerX" secondItem="0IJ-XG-kvE" secondAttribute="centerX" id="LF7-TC-2ns"/>
+                            <constraint firstItem="76v-NB-qBZ" firstAttribute="centerY" secondItem="0IJ-XG-kvE" secondAttribute="centerY" id="QBS-pi-mmD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qe7-Du-76q"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Record" id="aDJ-11-6jx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wss-PA-8Wx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71" y="46"/>
         </scene>
     </scenes>
 </document>
