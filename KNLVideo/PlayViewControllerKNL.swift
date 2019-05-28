@@ -7,24 +7,33 @@
 //
 
 import UIKit
+import AVKit
+import MobileCoreServices
 
 class PlayViewControllerKNL: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
+    @IBAction func playVideo(_ sender: Any) {
+        VideoKNL.startMediaBrowser(delegate: self, sourceType: .savedPhotosAlbum)
+    }
+}
+
+extension PlayViewControllerKNL: UIImagePickerControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let mediaType = info[UIImagePickerController.InfoKey.mediaType] as? String, mediaType == (kUTTypeMovie as String), let url = info[UIImagePickerController.InfoKey.mediaURL] as? URL else { return }
+        
+        dismiss(animated: true) {
+            let player = AVPlayer(url: url)
+            let vcPlayer = AVPlayerViewController()
+            vcPlayer.player = player
+            self.present(vcPlayer, animated: true, completion: nil)
+        }
+    }
+}
+
+extension PlayViewControllerKNL: UINavigationControllerDelegate {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

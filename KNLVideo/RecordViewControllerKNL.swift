@@ -16,7 +16,9 @@ class RecordViewControllerKNL: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func recordVideo(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

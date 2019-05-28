@@ -21,6 +21,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qg-Vi-Hka">
                                 <rect key="frame" x="172" y="433" width="70" height="30"/>
                                 <state key="normal" title="Play video"/>
+                                <connections>
+                                    <action selector="playVideo:" destination="RPN-1K-5jg" eventType="touchUpInside" id="SxG-G9-vLI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -30,7 +33,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4qX-Oj-cMb"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Play" id="dOv-kL-1x7"/>
+                    <tabBarItem key="tabBarItem" title="Play" image="icons8-play-button-circled-30" id="dOv-kL-1x7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOZ-os-AsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,7 +89,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HHD-IQ-C8a"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Merge" id="l9m-36-acI"/>
+                    <tabBarItem key="tabBarItem" title="Merge" image="icons8-merge-30" id="l9m-36-acI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VaD-YV-Zg7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,6 +125,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76v-NB-qBZ">
                                 <rect key="frame" x="162" y="433" width="90" height="30"/>
                                 <state key="normal" title="Record video"/>
+                                <connections>
+                                    <action selector="recordVideo:" destination="dfY-la-H91" eventType="touchUpInside" id="n5V-IU-C4n"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -131,11 +137,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Qe7-Du-76q"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Record" id="aDJ-11-6jx"/>
+                    <tabBarItem key="tabBarItem" title="Record" image="icons8-documentary-30" id="aDJ-11-6jx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wss-PA-8Wx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-71" y="46"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-documentary-30" width="30" height="30"/>
+        <image name="icons8-merge-30" width="30" height="30"/>
+        <image name="icons8-play-button-circled-30" width="30" height="30"/>
+    </resources>
 </document>
