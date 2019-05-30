@@ -81,15 +81,27 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="S37-CS-sTy">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sgf-k2-H4J" firstAttribute="centerX" secondItem="IFZ-ez-vgu" secondAttribute="centerX" id="3nc-jm-6xE"/>
+                            <constraint firstItem="S37-CS-sTy" firstAttribute="centerY" secondItem="IFZ-ez-vgu" secondAttribute="centerY" id="5dL-MJ-Yub"/>
+                            <constraint firstItem="S37-CS-sTy" firstAttribute="centerX" secondItem="IFZ-ez-vgu" secondAttribute="centerX" id="WPr-gA-rcj"/>
                             <constraint firstItem="sgf-k2-H4J" firstAttribute="centerY" secondItem="IFZ-ez-vgu" secondAttribute="centerY" id="eph-4x-yIg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HHD-IQ-C8a"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Merge" image="icons8-merge-30" id="l9m-36-acI"/>
+                    <connections>
+                        <outlet property="activityMonitor" destination="S37-CS-sTy" id="1B4-ln-RZ9"/>
+                        <outlet property="animationButton" destination="Kmm-QF-LXI" id="TpW-7g-fgM"/>
+                        <outlet property="firstVideoButton" destination="j9C-M5-n2d" id="j8O-j9-13a"/>
+                        <outlet property="mergeButton" destination="2Ot-iD-rrO" id="fyy-jj-0bS"/>
+                        <outlet property="secondVideoButton" destination="5vJ-d3-Qyi" id="ElX-VT-y4R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VaD-YV-Zg7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
